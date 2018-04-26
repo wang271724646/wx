@@ -21,9 +21,23 @@ Page({
     })
   },
   deng(){
+
+    if(this.data.nums==""){
+      this.setData({
+        result:""
+      })
+    }else{
+      var that=this;
     this.setData({
-      result: eval1(this.data.nums)
+      result: (function(){
+        if (eval1(that.data.nums)){
+          return eval1(that.data.nums)
+        }else{
+          return eval1(that.data.nums.slice(0,-1))
+        }
+      })()
     })
+    }
   },
 
   tool(e){
@@ -54,13 +68,37 @@ Page({
     })
    
   },
+  /**后退的函数**/
   back(){
+    //改变开关的值
     this.setData({
       flag: true
     })
+
+    // 如果没有数字了，就不计算了
+    if (!this.data.nums) {
+      this.setData({
+        result: ""
+      })
+    }else{
+
+    // 减掉最后一位数字
     this.setData({
       nums:this.data.nums.slice(0,-1)
     })
+    //重新计算
+    var that = this;
+    this.setData({
+      result: (function () {
+        if (eval1(that.data.nums)) {
+          return eval1(that.data.nums)
+        } else {
+          return eval1(that.data.nums.slice(0, -1))
+        }
+      })()
+    })
+    }
+
   },
 
   /**
