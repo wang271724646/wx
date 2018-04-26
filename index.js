@@ -1,10 +1,41 @@
+var eval1=require("./eval.js")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nums:""
+    nums:"",
+    result:"",
+    flag:true 
+  },
+  clear(){
+    this.setData({
+      flag: true
+    })
+    this.setData({
+      nums: ""
+    })
+    this.setData({
+      result: ""
+    })
+  },
+  deng(){
+    this.setData({
+      result: eval1(this.data.nums)
+    })
+  },
+
+  tool(e){
+    if(!this.data.flag){
+      return;
+    }
+    this.setData({
+      flag:false
+    })
+    this.setData({
+      nums: this.data.nums + e.target.dataset.text
+    })
   },
 
   /**
@@ -16,11 +47,17 @@ Page({
   
   getNum(e){
     this.setData({
+      flag: true
+    })
+    this.setData({
       nums: this.data.nums + e.target.dataset.text
     })
    
   },
   back(){
+    this.setData({
+      flag: true
+    })
     this.setData({
       nums:this.data.nums.slice(0,-1)
     })

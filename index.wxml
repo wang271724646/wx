@@ -5,26 +5,26 @@
           {{nums}}
         </view>
         <view class="result"> 
-           200
+          {{result}}
         </view>
   </view>
   <view class="keys">
-      <view class="key tool" bindtap='aa'>c</view>
-      <view class="key tool">×</view>
-      <view class="key tool">÷</view>
+      <view class="key tool" bindtap='aa' bindtap='clear'>c</view>
+      <view class="key tool" bindtap='tool' data-text="*">×</view>
+      <view class="key tool" bindtap='tool' data-text="/">÷</view>
       <view class="key tool" bindtap='back'>back</view>
       <view class="key" bindtap='getNum' data-text="7">7</view>
       <view class="key" bindtap='getNum' data-text="8">8</view>
       <view class="key" bindtap='getNum' data-text="9">9</view>
-      <view class="key tool">+</view>
+      <view class="key tool" bindtap='tool' data-text="+">+</view>
       <view class="key" bindtap='getNum' data-text="4">4</view>
       <view class="key" bindtap='getNum' data-text="5">5</view>
       <view class="key" bindtap='getNum' data-text="6">6</view>
-      <view class="key tool">-</view>
+      <view class="key tool" bindtap='tool' data-text="-">-</view>
       <view class="key" bindtap='getNum' data-text="1">1</view>
       <view class="key" bindtap='getNum' data-text="2">2</view>
       <view class="key" bindtap='getNum' data-text="3">3</view>
-      <view class="key tool">=</view>
+      <view class="key tool" bindtap='deng'>=</view>
   </view>
 </view>
 
