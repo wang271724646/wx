@@ -2,28 +2,28 @@
 <view class="box">
   <view class="view">
         <view class="nums"> 
-          5+10+6+1*2
+          {{nums}}
         </view>
         <view class="result"> 
            200
         </view>
   </view>
   <view class="keys">
-      <view class="key tool">c</view>
+      <view class="key tool" bindtap='aa'>c</view>
       <view class="key tool">×</view>
       <view class="key tool">÷</view>
-      <view class="key tool">back</view>
-      <view class="key">7</view>
-      <view class="key">8</view>
-      <view class="key">9</view>
+      <view class="key tool" bindtap='back'>back</view>
+      <view class="key" bindtap='getNum' data-text="7">7</view>
+      <view class="key" bindtap='getNum' data-text="8">8</view>
+      <view class="key" bindtap='getNum' data-text="9">9</view>
       <view class="key tool">+</view>
-      <view class="key">4</view>
-      <view class="key">5</view>
-      <view class="key">6</view>
+      <view class="key" bindtap='getNum' data-text="4">4</view>
+      <view class="key" bindtap='getNum' data-text="5">5</view>
+      <view class="key" bindtap='getNum' data-text="6">6</view>
       <view class="key tool">-</view>
-      <view class="key">1</view>
-      <view class="key">2</view>
-      <view class="key">3</view>
+      <view class="key" bindtap='getNum' data-text="1">1</view>
+      <view class="key" bindtap='getNum' data-text="2">2</view>
+      <view class="key" bindtap='getNum' data-text="3">3</view>
       <view class="key tool">=</view>
   </view>
 </view>
