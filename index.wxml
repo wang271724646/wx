@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="box">
+  <view class="view">
+        <view class="nums"> 
+          5+10+6+1*2
+        </view>
+        <view class="result"> 
+           200
+        </view>
+  </view>
+  <view class="keys">
+      下面
+  </view>
+</view>
+
