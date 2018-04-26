@@ -9,7 +9,22 @@
         </view>
   </view>
   <view class="keys">
-      下面
+      <view class="key tool">c</view>
+      <view class="key tool">×</view>
+      <view class="key tool">÷</view>
+      <view class="key tool">back</view>
+      <view class="key">7</view>
+      <view class="key">8</view>
+      <view class="key">9</view>
+      <view class="key tool">+</view>
+      <view class="key">4</view>
+      <view class="key">5</view>
+      <view class="key">6</view>
+      <view class="key tool">-</view>
+      <view class="key">1</view>
+      <view class="key">2</view>
+      <view class="key">3</view>
+      <view class="key tool">=</view>
   </view>
 </view>
 
